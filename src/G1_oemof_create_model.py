@@ -79,7 +79,7 @@ def build(experiment, case_dict):
 
     elif isinstance(case_dict["genset_fixed_capacity"], float):
         if case_dict["genset_with_minimal_loading"] is True:
-            genset = generate.genset_fix_minload(
+            genset = generate.genset_fix_offset(
                 micro_grid_system,
                 bus_fuel,
                 bus_electricity_ac,
